@@ -1,24 +1,2 @@
-# person-web
-
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+# 广财小菜鸡的个人网站
+很无聊，所以做个了无聊的个人网站，用了九牛二虎之力，终于是把这个给做出来了
