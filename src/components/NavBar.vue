@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="icons">
-                    <a href="https://github.com/Violet2314" class="icon-github"></a>
+                    <a href="" class="icon-github"></a>
                 </div>
             </div>
         </div>
