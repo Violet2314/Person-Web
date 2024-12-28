@@ -16,7 +16,7 @@
 </template>
 
 <script setup>
-import { computed, ref, onMounted, onUnmounted,watch} from 'vue'
+import { computed, ref, onMounted, onUnmounted, watch } from 'vue'
 import { useStore } from 'vuex'
 
 const store = useStore()
@@ -53,6 +53,16 @@ const photos = [
     }
 ]
 
+// 预加载图片
+const preloadImages = () => {
+    photos.forEach(photo => {
+        photo.images.forEach(img => {
+            const image = new Image()
+            image.src = img.image
+        })
+    })
+}
+
 // 当前图片索引
 const imageIndex = ref(0)
 
@@ -74,7 +84,7 @@ const changeImage = () => {
 let interval
 const setTimer = () => {
     clearInterval(interval)
-    interval = setInterval(changeImage, 5000) // 每 4 秒切换一次图片
+    interval = setInterval(changeImage, 5000) // 每 5 秒切换一次图片
 }
 
 watch(selectedMovie, () => {
@@ -83,6 +93,7 @@ watch(selectedMovie, () => {
 })
 
 onMounted(() => {
+    preloadImages() // 预加载图片
     setTimer()
 })
 
