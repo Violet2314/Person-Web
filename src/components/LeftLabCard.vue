@@ -83,7 +83,7 @@ const movies = [
         title: "Personal Website",
         subtitle: 'VUE',
         date: '2024.10',
-        image: require('../photos/LabPhotos/QT2.png')
+        image: require('../photos/LabPhotos/pes1.png')
     },
     {
         id: 3,
@@ -97,7 +97,7 @@ const movies = [
         title: 'GO Lab',
         subtitle: 'GO',
         date: 'none',
-        image: require('../photos/LabPhotos/QT2.png')
+        image: require('../photos/LabPhotos/other1.jpg')
     }
 ]
 </script>

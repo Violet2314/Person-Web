@@ -10,7 +10,7 @@
                     </a>
                 </div>
                 <div class="icons">
-                    <a href="" class="icon-github"></a>
+                    <a href="https://github.com/Violet2314" class="icon-github"></a>
                 </div>
             </div>
         </div>
@@ -25,8 +25,6 @@ const menuItems = [
     { id: 'stack', title: 'Stack' },
     { id: 'lab', title: 'Lab' },
     { id: 'favorites', title: 'Favorites' },
-    { id: 'time', title: 'Time' },
-    { id: 'aesthetic', title: 'Aesthetic' },
 ];
 
 const activeSection = ref('');
