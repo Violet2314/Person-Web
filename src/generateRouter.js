@@ -50,7 +50,8 @@ fs.readdir(blogDir, (err, files) => {
             routes.push(`    {
         path: '${routePath}',
         component: () => import('@/components/blog/BlogItem.vue'),
-        props: { fileName: '${file}',title: '${frontMatter.title}' }
+        props: { fileName: '${file}',title: '${frontMatter.title}' },
+        meta: { showRightHome: false, showContentNav: true },
     }`);
 
             // 构建 blogItem 数据

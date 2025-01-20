@@ -1,9 +1,9 @@
 ---
 title: 总结java数据结构和算法
 date: 2024-08-04
-tag: 技术开发
-category: 我的赛博垃圾
-excerpt: 测试
+tag: 期末复习
+category: 大二上期末复习
+excerpt: 主要是应付期末考试的
 ---
 ### **算法的 5 个特性**
 1. **有穷性**  

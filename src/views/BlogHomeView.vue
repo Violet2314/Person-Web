@@ -32,7 +32,7 @@
                                 <div class="archive-count">{{ blognum }}</div>
                             </div>
                             <div class="archive-stats">
-                                <p>Tags: 3 Categories: 3</p>
+                                <p>败犬女主真好看吧</p>
                             </div>
                         </div>
                     </div>

@@ -96,6 +96,10 @@ onMounted(loadMarkdown);
     width: 100%;
 }
 
+.markdown-content img{
+    width: 90%;
+}
+
 .blog-content2 {
     padding: 20px;
     flex: 1;
