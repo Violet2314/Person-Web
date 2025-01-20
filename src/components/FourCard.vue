@@ -6,6 +6,11 @@
                 <div class="skill-bar">
                     <div class="skill-bar-progress" :style="{ width: `${grade}%` }"></div>
                 </div>
+                <div v-if="logos && logos.length > 0" class="logo-container">
+                    <!-- 使用 v-for 动态渲染 logo 图片 -->
+                    <img v-for="(logo, index) in logos" :key="index" :src="logo" :alt="`Logo ${index + 1}`"
+                        class="logo-image" />
+                </div>
             </div>
         </div>
         <div class="skill-card-back" ref="overlayRef">
@@ -34,6 +39,9 @@ defineProps({
     description: {
         type: String,
         required: true
+    },
+    logos: {
+        type: Array,
     }
 })
 
@@ -168,8 +176,10 @@ const animateOut = () => {
     height: 80%;
     padding: 24px;
     overflow-y: auto;
-    white-space: normal; /* 确保正常换行 */
-    word-wrap: break-word; /* 强制长文本换行 */
+    white-space: normal;
+    /* 确保正常换行 */
+    word-wrap: break-word;
+    /* 强制长文本换行 */
     display: flex;
     flex-direction: column;
 }
@@ -178,9 +188,12 @@ const animateOut = () => {
 .scroll-container::-webkit-scrollbar {
     display: none;
 }
+
 .scroll-container {
-    -ms-overflow-style: none; /* IE 和 Edge */
-    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;
+    /* IE 和 Edge */
+    scrollbar-width: none;
+    /* Firefox */
 }
 
 .skill-description {
@@ -189,5 +202,20 @@ const animateOut = () => {
     color: white;
     margin: 0;
     word-wrap: break-word;
+}
+
+.logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* 将子元素靠右对齐 */
+    position: absolute;
+    bottom: -15%;
+}
+
+.logo-image {
+    width: 30%;
+    max-width: 65px;
+    min-width: 50px;
 }
 </style>

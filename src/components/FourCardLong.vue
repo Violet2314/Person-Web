@@ -6,6 +6,11 @@
                 <div class="skill-bar">
                     <div class="skill-bar-progress" :style="{ width: `${grade}%` }"></div>
                 </div>
+                <div v-if="logos && logos.length > 0" class="logo-container">
+                    <!-- 使用 v-for 动态渲染 logo 图片 -->
+                    <img v-for="(logo, index) in logos" :key="index" :src="logo" :alt="`Logo ${index + 1}`"
+                        class="logo-image" />
+                </div>
             </div>
         </div>
         <div class="skill-card-back" ref="overlayRef">
@@ -34,6 +39,9 @@ defineProps({
     description: {
         type: String,
         required: true
+    },
+    logos: {
+        type: Array,
     }
 })
 
@@ -79,6 +87,7 @@ const animateOut = () => {
 <style scoped>
 .skill-card-front-content {
     width: 70%;
+    height: 60%;
     position: absolute;
     z-index: 2;
 }
@@ -186,5 +195,19 @@ const animateOut = () => {
     color: white;
     margin: 0;
     word-wrap: break-word;
+}
+.logo-container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end; /* 将子元素靠右对齐 */
+    position: absolute;
+    bottom: -15%;
+}
+
+.logo-image {
+    width: 30%;
+    max-width: 95px;
+    min-width: 55px;
 }
 </style>

@@ -8,6 +8,7 @@
                         :class="{ active: activeSection === item.id }">
                         {{ item.title }}
                     </a>
+                    <router-link :to="'/blog'">Blog</router-link>
                 </div>
                 <div class="icons">
                     <a href="https://github.com/Violet2314" class="icon-github"></a>
@@ -97,7 +98,7 @@ defineExpose({ updateActiveSection });
     cursor: pointer;
 }
 
-.menu a:hover{
+.menu a:hover {
     color: var(--accent-colour);
 }
 

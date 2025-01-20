@@ -30,7 +30,7 @@
                 <LoveDeathRobots />
             </div>
             <div class="one-stack">
-                <FourCard :title="'JavaScript / Vue'" :grade="60">
+                <FourCard :title="'JavaScript / Vue'" :grade="60" :logos="[require('@/photos/logo/icons8-javascript.svg'),require('@/photos/logo/icons8-视图-js.svg')]">
                     <template #description>
                         I developed some small web pages and personal websites, and participated in the front-end
                         development of the
@@ -38,32 +38,32 @@
                             oj</a> web page.
                     </template>
                 </FourCard>
-                <FourCard :title="'QT(Cpp)'" :grade="40">
+                <FourCard :title="'QT(Cpp)'" :grade="40" :logos="[require('@/photos/logo/icons8-qt.svg'),require('@/assets/cpp-svgrepo-com.svg')]">
                     <template #description>
                         I used QT to develop a nethard cloud music player
                     </template>
                 </FourCard>
-                <FourCard :title="'Java'" :grade="20">
+                <FourCard :title="'Java'" :grade="20" :logos="[require('@/photos/logo/icons8-java咖啡杯徽标.svg')]">
                     <template #description>
                         I have developed a library management system and a personnel management system using Springboot
                         in java
                     </template>
                 </FourCard>
-                <FourCard :title="'Go'" :grade="0">
+                <FourCard :title="'Go'" :grade="10" :logos="[require('@/photos/logo/golang-svgrepo-com.svg')]">
                     <template #description>
                         Start Byte Academy right now. I'll learn
                     </template>
                 </FourCard>
             </div>
             <div class="two-stack">
-                <FourCardLong :title="'DataStructure / Algorithms'" :grade="44">
+                <FourCardLong :title="'DataStructure / Algorithms'" :grade="44" :logos="[require('@/photos/logo/ccpc.png.svg')]">
                     <template #description>
                         I have studied algorithm for some time, participated in programming competition, and won the
                         bronze medal of ACM-CCPC China National Invitational Competition
                     </template>
                 </FourCardLong>
                 <OpenAi />
-                <FourCardLong :title="'Python'" :grade="17">
+                <FourCardLong :title="'Python'" :grade="17" :logos="[require('@/photos/logo/icons8-python.svg')]">
                     <template #description>
                         I developed an email script that mimics the daily greetings that Yanami Anna sends me
                     </template>
