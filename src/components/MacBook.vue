@@ -50,6 +50,14 @@ const photos = [
             { image: require('../photos/LabPhotos/other1.jpg') },
             { image: require('../photos/LabPhotos/other2.jpg') }
         ]
+    },
+    {
+        id: 5,
+        images: [
+            {
+                image: require('../photos/LabPhotos/lulab.png')
+            }
+        ]
     }
 ]
 

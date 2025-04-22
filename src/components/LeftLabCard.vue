@@ -98,6 +98,13 @@ const movies = [
         subtitle: 'GO',
         date: 'none',
         image: require('../photos/LabPhotos/other1.jpg')
+    },
+    {
+        id: 5,
+        title: 'spring cloud lab',
+        subtitle: 'VUE + JAVA',
+        date: '2025.4',
+        image: require('../photos/LabPhotos/lulab.png')
     }
 ]
 </script>

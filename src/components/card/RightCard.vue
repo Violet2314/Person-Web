@@ -54,6 +54,12 @@ const passenge = [
         title: "GO Lab",
         Stack: "GO",
         description: "I haven't done it yet"
+    },
+    {
+        id: 5,
+        title: "spring cloud lab",
+        Stack: "VUE + JAVA",
+        description: "It is still under production at present. The address is http://8.134.197.178/."
     }
 ]
 
